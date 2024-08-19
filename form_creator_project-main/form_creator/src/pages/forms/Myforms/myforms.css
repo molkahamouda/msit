@@ -1,0 +1,58 @@
+
+.myforms-container {
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  /* Conteneur pour la sidebar */
+  .myforms-sidebar {
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    border-right: 1px solid #e0e0e0;
+    height: 90vh;
+    overflow-y: auto;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style des boutons dans la sidebar */
+  .myforms-sidebar .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Conteneur pour la table */
+  .myforms-table-container {
+    flex: 1;
+    overflow: auto;
+  }
+  
+  /* Styles pour l'en-tête de la table */
+  .myforms-table-container .MuiTableHead-root {
+    background-color: #6488ea;
+  }
+  
+  /* Styles pour les cellules de l'en-tête */
+  .myforms-table-container .MuiTableCell-root {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Styles pour les cellules du corps de la table */
+  .myforms-table-container .MuiTableCell-root {
+    color: #212529;
+  }
+  
+  /* Styles généraux pour les lignes de la table */
+  .myforms-table-container .MuiTableRow-root {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  

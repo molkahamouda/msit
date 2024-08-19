@@ -1,0 +1,73 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px; 
+  width: 250px;
+  background-color: #1283FF;
+}
+
+
+body{
+  width: 100vw;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 100vh !important;
+  background: url("../public/img/constellationbackground.jpg") no-repeat !important;
+  /* background-color: white !important; */
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+
+button {
+  width: 180px; 
+  height: 40px; 
+  padding: 10px 20px; 
+  border: none;
+  background-color: #ffffff; 
+  color: #1283FF; 
+  border-radius: 5px; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0056b3; 
+  color: white;
+}
+.container {
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center elements vertically */
+  align-items: center; /* Center elements horizontally */
+  gap: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #1283FF;
+}
+
+.preview {
+  margin-left: 20px; /* Add margin to separate the sidebar and preview */
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.field {
+  margin-bottom: 20px;
+}

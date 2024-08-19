@@ -1,0 +1,81 @@
+/* Ajoutez ceci à votre fichier Sidebar.css */
+
+/* Styles pour le bouton de bascule */
+.sidebar-toggle {
+  position: fixed;
+  top: 20px; /* Ajuster la position verticale */
+  left: 20px; /* Ajuster la position horizontale */
+  background-color: #ffffff; /* Fond blanc pour le bouton */
+  border: 2px solid #2c72bc; /* Bordure bleue */
+  color: #2c72bc; /* Couleur de l'icône */
+  border-radius: 50%; /* Rond */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  z-index: 1000; /* Au-dessus de la sidebar */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+  background-color: #f0f8ff; /* Fond au survol */
+  color: #0056b3; /* Couleur de l'icône au survol */
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: #ffffff; /* Fond blanc */
+  color: #2c72bc; /* Texte en bleu */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed; /* Pour que la barre reste fixe */
+  top: 60px; /* Début juste après le header */
+  left: 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 900; /* Assurer que le sidebar soit sous le header */
+  transform: translateX(0); /* Par défaut, la barre est visible */
+  transition: transform 0.3s ease; /* Transition douce pour les animations */
+}
+
+.sidebar.closed {
+  transform: translateX(-250px); /* Masquer la barre en la déplaçant vers la gauche */
+}
+
+.sidebar-title {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+  color: #2c72bc; /* Bleu pour le titre */
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-link {
+  color: #2c72bc; /* Bleu pour les liens */
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 4px; /* Coins arrondis */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Effets de transition */
+}
+
+.sidebar-link:hover {
+  background-color: #f0f8ff; /* Bleu très clair pour le survol */
+  color: #0056b3; /* Assombri le texte au survol */
+}
+
+.sidebar-link.active {
+  background-color: #e0e0e0; /* Fond différent pour l'élément actif */
+  color: #2c72bc; /* Couleur du texte pour l'élément actif */
+  font-weight: bold; /* Met en gras l'élément actif */
+}

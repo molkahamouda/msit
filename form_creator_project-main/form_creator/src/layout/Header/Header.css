@@ -1,0 +1,52 @@
+.header {
+  background-color: #ffffff; /* Fond blanc */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère sous le header */
+  color: #2c72bc; /* Texte en bleu */
+  position: fixed; /* Fixer le header en haut */
+  top: 0;
+  left: 0;
+  width: 100%; /* Occuper toute la largeur */
+  z-index: 1000; /* Assurer que le header soit au-dessus des autres éléments */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Optionnel : limite la largeur du contenu du header */
+  margin: 0 auto; /* Centrer le contenu du header */
+}
+
+.header-title {
+  color: #2c72bc; /* Bleu pour le titre */
+  font-size: 24px;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.header-nav {
+  margin-right: 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item .nav-link {
+  color: #2c72bc; /* Bleu pour les liens */
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  color: #0056b3; /* Bleu plus foncé pour le survol */
+}
